@@ -23,14 +23,14 @@ pipeline {
         stage('Install Frontend Dependencies') {
             steps {
                 dir('Patho-Frontend') {
-                    bat 'npm install'
+                    bat 'npm install --legacy-peer-deps'
                 }
             }
         }
 
         stage('Build Frontend') {
             steps {
-                dir('client') {
+                dir('Patho-Frontend') {
                     bat 'npm run build'
                 }
             }
