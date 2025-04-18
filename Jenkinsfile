@@ -15,7 +15,7 @@ pipeline {
         stage('Install Backend Dependencies') {
             steps {
                 dir('Server') {
-                    bat 'npm install'
+                     bat 'npm install --legacy-peer-deps'
                 }
             }
         }
