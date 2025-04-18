@@ -1,5 +1,3 @@
-"use client";
-
 import React, { useState } from "react";
 import { CiSearch } from "react-icons/ci";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa6";

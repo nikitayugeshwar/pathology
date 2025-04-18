@@ -1,4 +1,3 @@
-"use client";
 import React from "react";
 import { CiSearch } from "react-icons/ci";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa6";

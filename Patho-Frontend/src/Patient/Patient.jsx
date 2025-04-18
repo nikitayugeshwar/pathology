@@ -1,4 +1,3 @@
-"use client";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 
@@ -9,7 +8,7 @@ import { useSelector } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
 import PatientTable from "./PatientTable";
 
-const BASE_URL = import.meta.env.VITE_API_BASE_URL;
+import { BASE_URL } from "../utils/env";
 
 export default function Patient() {
   const [searchTerm, setSearchTerm] = useState("");
