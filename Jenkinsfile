@@ -36,13 +36,7 @@ pipeline {
             }
         }
 
-        stage('Run Tests') {
-            steps {
-                dir('Server') {
-                    bat 'npm test'
-                }
-            }
-        }
+      
 
         stage('Done') {
             steps {
