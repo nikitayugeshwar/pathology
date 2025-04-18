@@ -22,7 +22,7 @@ pipeline {
 
         stage('Install Frontend Dependencies') {
             steps {
-                dir('client') {
+                dir('Patho-Frontend') {
                     bat 'npm install'
                 }
             }
